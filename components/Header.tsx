@@ -36,12 +36,11 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" onClick={handleNavClick} className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-brand rounded-lg flex items-center justify-center text-white text-xl shadow-lg group-hover:bg-brand-dark transition-colors">
-              <i className="fa-solid fa-utensils"></i>
-            </div>
-            <span className={`text-2xl font-bold tracking-tight ${isScrolled ? 'text-brand-dark' : 'text-brand-darker'} `}>
-              Gourmetech
-            </span>
+            <img 
+              src="/img/gourmetech-logo.png" 
+              alt="Gourmetech" 
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}

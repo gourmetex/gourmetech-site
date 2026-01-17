@@ -6,16 +6,17 @@ export const Footer: React.FC = () => {
     <footer className="bg-brand-darker text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          
+
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-               <div className="w-8 h-8 bg-brand rounded-md flex items-center justify-center text-white text-sm">
-                  <i className="fa-solid fa-utensils"></i>
-                </div>
-              <span className="text-xl font-bold">Gourmetech</span>
-            </div>
+            <Link to="/" className="flex items-center gap-2 mb-4 group">
+              <img
+                src="/img/gourmetech-logo-branco.png"
+                alt="Gourmetech"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              O ERP definitivo para modernizar seu restaurante ou mercado. Simples, poderoso e justo.
+              O ERP perfeito para modernizar seu restaurante ou mercado. Simples, poderoso e justo.
             </p>
           </div>
 
@@ -41,18 +42,18 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-gray-300">
               <li className="flex items-center gap-2">
                 <i className="fa-regular fa-envelope"></i>
-                contato@gourmetech.com
+                appgourmetech@gmail.com
               </li>
               <li className="flex items-center gap-2">
                 <i className="fa-solid fa-phone"></i>
-                0800 123 4567
+                (41) 9 9877-1127
               </li>
               <li className="mt-4 flex gap-4">
                 <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition-colors">
-                    <i className="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
                 <a href="#" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition-colors">
-                    <i className="fa-brands fa-linkedin-in"></i>
+                  <i className="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
             </ul>
@@ -60,7 +61,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Gourmetech Tecnologia Ltda. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Gourmetech. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
