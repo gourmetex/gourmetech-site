@@ -35,7 +35,7 @@ export const Terms: React.FC = () => {
 
           <h2 className="text-xl font-bold text-gray-800 mt-6 mb-3">5. Propriedade Intelectual</h2>
           <p className="mb-4">
-            Todo o conteúdo, design, gráficos e código relacionados ao Gourmetech são propriedade exclusiva da Gourmetech Tecnologia Ltda.
+            Todo o conteúdo, design, gráficos e código relacionados ao Gourmetech são propriedade exclusiva da Kinetic Solutions, proprietária do sistema Gourmetech.
           </p>
         </div>
       </div>

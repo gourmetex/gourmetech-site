@@ -98,22 +98,11 @@ export const Contact: React.FC = () => {
                       <span className="text-sm">appgourmetech@gmail.com</span>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <i className="fa-solid fa-location-dot text-sm"></i>
-                    </div>
-                    <div>
-                      <span className="block text-xs text-blue-200 uppercase tracking-wider font-semibold">Escritório</span>
-                      <span className="text-sm">Av. Paulista, 1000 - SP</span>
-                    </div>
-                  </li>
                 </ul>
               </div>
 
               <div className="mt-12">
                 <div className="flex gap-4">
-                  <a href="#" className="text-white hover:text-blue-200 transition-colors"><i className="fa-brands fa-facebook text-xl"></i></a>
-                  <a href="#" className="text-white hover:text-blue-200 transition-colors"><i className="fa-brands fa-twitter text-xl"></i></a>
                   <a href="#" className="text-white hover:text-blue-200 transition-colors"><i className="fa-brands fa-instagram text-xl"></i></a>
                 </div>
               </div>

@@ -40,7 +40,7 @@ export const Privacy: React.FC = () => {
           
            <h2 className="text-xl font-bold text-gray-800 mt-6 mb-3">5. Contato</h2>
           <p className="mb-4">
-            Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco em privacidade@gourmetech.com.
+            Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco em appgourmetech@gmail.com.
           </p>
         </div>
       </div>
