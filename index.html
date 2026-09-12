@@ -1,53 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#3E6990" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     
-    <title>Gourmetech | Sistema de Gestão ERP Gratuito para Restaurantes e Mercados</title>
-    
-    <meta name="description" content="O melhor sistema ERP para restaurantes, bares, delivery e mercados. Gestão de estoque, financeiro e PDV sem mensalidade fixa. Comece grátis hoje!">
-    <meta name="keywords" content="sistema restaurante, erp mercado, sistema de gestão gratuito, pdv frente de caixa, delivery, controle de estoque, comanda eletronica, sistema sem mensalidade">
-    <meta name="author" content="Gourmetech Tecnologia">
-    <meta name="robots" content="index, follow">
+    <!-- Primary SEO Meta Tags -->
+    <title>Gourmetech | Sistema de Gestão e Delivery para Restaurantes e Mercados</title>
+    <meta name="title" content="Gourmetech | Sistema de Gestão e Delivery para Restaurantes e Mercados" />
+    <meta name="description" content="Sistema inteligente de gestão e retaguarda de delivery para restaurantes e mercados. KDS em tempo real, controle de estoque com ficha técnica e sem mensalidade fixa." />
+    <meta name="keywords" content="sistema restaurante, sistema delivery, erp mercado, kds cozinha, controle de estoque restaurante, ficha técnica de alimentos, app delivery próprio, compra rápida, sistema sem mensalidade, gestão food service" />
+    <meta name="author" content="Gourmetech Tecnologia" />
+    <meta name="copyright" content="Gourmetech" />
+    <meta name="application-name" content="Gourmetech" />
+    <meta name="language" content="Portuguese" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="General" />
     <link rel="canonical" href="https://www.gourmetech.com.br/" />
 
-    <link rel="icon" type="image/png" href="/img/icone-gourmetech.png" />
-    <link rel="apple-touch-icon" href="/img/icone-gourmetech.png" />
+    <!-- Crawlers & Indexing Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
+    <!-- Regional & Geo Tags (Local SEO Brasil) -->
+    <meta name="geo.region" content="BR" />
+    <meta name="geo.placename" content="Brasil" />
+
+    <!-- Brand Color & Mobile App Experience -->
+    <meta name="theme-color" content="#3E6990" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1F3649" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Gourmetech" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Favicons & Touch Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icone-gourmetech.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icone-gourmetech.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icone-gourmetech.png" />
+
+    <!-- Open Graph / Facebook / WhatsApp (Social Previews) -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gourmetech" />
     <meta property="og:url" content="https://www.gourmetech.com.br/" />
-    <meta property="og:title" content="Gourmetech - Gestão Inteligente para Food Service" />
-    <meta property="og:description" content="Simplifique sua operação com um ERP completo e sem custos fixos. Pague apenas sobre o sucesso das suas vendas." />
-    <meta property="og:image" content="/img/print-sistema.png" />
-    <meta property="og:image:alt" content="Dashboard do sistema Gourmetech" />
+    <meta property="og:title" content="Gourmetech | Sistema de Gestão e Delivery para Restaurantes e Mercados" />
+    <meta property="og:description" content="Gestão inteligente de delivery para restaurantes e mercados com KDS de cozinha em tempo real, controle de estoque por ficha técnica e sem mensalidade fixa." />
+    <meta property="og:image" content="https://www.gourmetech.com.br/img/print-sistema.png" />
+    <meta property="og:image:secure_url" content="https://www.gourmetech.com.br/img/print-sistema.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dashboard e KDS do Sistema Gourmetech" />
     <meta property="og:locale" content="pt_BR" />
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.gourmetech.com.br/" />
-    <meta property="twitter:title" content="Gourmetech - ERP Inteligente" />
-    <meta property="twitter:description" content="Sistema de gestão completo para seu negócio sem mensalidade fixa." />
-    <meta property="twitter:image" content="/img/print-sistema.png" />
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.gourmetech.com.br/" />
+    <meta name="twitter:title" content="Gourmetech | Gestão Inteligente para Restaurantes e Mercados" />
+    <meta name="twitter:description" content="Sistema de gestão completo com KDS, ficha técnica, delivery próprio e custo fixo zero em mensalidades." />
+    <meta name="twitter:image" content="https://www.gourmetech.com.br/img/print-sistema.png" />
+    <meta name="twitter:image:alt" content="Interface do Sistema Gourmetech" />
 
+    <!-- Performance: Preconnect & DNS-Prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://esm.sh" />
+
+    <!-- Schema.org JSON-LD Structured Data (Rich Results: Organization, WebSite, SoftwareApplication, FAQPage) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Gourmetech",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BRL",
-        "description": "Modelo sem mensalidade fixa, taxa sobre transação."
-      },
-      "description": "Sistema de gestão empresarial (ERP) voltado para restaurantes e mercados com PDV, controle de estoque e financeiro.",
-      "author": {
+      "@graph": [
+        {
           "@type": "Organization",
-          "name": "Gourmetech Tecnologia Ltda"
-      }
+          "@id": "https://www.gourmetech.com.br/#organization",
+          "name": "Gourmetech",
+          "url": "https://www.gourmetech.com.br",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.gourmetech.com.br/img/gourmetech-logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-41-99877-1127",
+            "contactType": "customer service",
+            "areaServed": "BR",
+            "availableLanguage": ["Portuguese"]
+          },
+          "email": "appgourmetech@gmail.com"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.gourmetech.com.br/#website",
+          "url": "https://www.gourmetech.com.br/",
+          "name": "Gourmetech",
+          "description": "Sistema de gestão e retaguarda de delivery para restaurantes e mercados.",
+          "publisher": {
+            "@id": "https://www.gourmetech.com.br/#organization"
+          },
+          "inLanguage": "pt-BR"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.gourmetech.com.br/#software",
+          "name": "Gourmetech ERP",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, Android, iOS, Windows, macOS",
+          "url": "https://www.gourmetech.com.br",
+          "description": "Sistema ERP em nuvem especializado em food service e mercados. Inclui controle de estoque com ficha técnica, fila de pedidos com KDS em tempo real, aplicativo nativo de entrega e conciliação bancária PIX via Asaas.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "BRL",
+            "description": "Custo fixo zero em mensalidades. Taxa de implantação sob medida e remuneração transparente sobre vendas concluídas."
+          },
+          "featureList": [
+            "Fila de Pedidos e KDS na Cozinha em Tempo Real",
+            "Despacho de Entregas com App Nativo para Motoboys",
+            "Controle de Insumos e Estoque por Ficha Técnica",
+            "Liquidação Instantânea e Estornos PIX Integrados ao Asaas",
+            "Canal Próprio de Delivery Integrado Compra Rápida"
+          ],
+          "author": {
+            "@id": "https://www.gourmetech.com.br/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.gourmetech.com.br/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Como funciona o modelo sem mensalidade fixa do Gourmetech?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Gourmetech opera no modelo de custo fixo zero em licenças de software. Você não paga mensalidades fixas recorrentes, apenas uma pequena porcentagem justa sobre os pedidos faturados. Há uma taxa única e acessível de implantação para treinamento e ativação."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais equipamentos são necessários para utilizar o Gourmetech?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Gourmetech é 100% em nuvem e funciona em qualquer computador, notebook, tablet ou smartphone (Android e iOS). Qualquer tela com navegador pode se transformar em um KDS de cozinha em tempo real."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona a integração com o delivery Compra Rápida?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Compra Rápida é o aplicativo de delivery próprio do seu estabelecimento. Os pedidos feitos pelos seus clientes entram automaticamente no sistema e no KDS da cozinha, permitindo despacho imediato para entregadores com cálculo dinâmico de taxas e rotas por GPS."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona a taxa de implantação e o suporte do Gourmetech?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A implantação é rápida e com valores muito abaixo do mercado tradicional. Disponibilizamos a opção com treinamento e auto-cadastro (a partir de R$ 149) ou a opção assistida chave na mão (sob medida pelo porte do catálogo). O suporte técnico é dedicado via WhatsApp e e-mail."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
     
@@ -55,8 +174,6 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script>
@@ -65,14 +182,36 @@
           extend: {
             colors: {
               brand: {
-                light: '#5A82A6',
+                50: '#F1F6FA',
+                100: '#E2ECF4',
+                200: '#BDD4E6',
+                300: '#8EB5D4',
+                400: '#5A82A6',
                 DEFAULT: '#3E6990',
+                600: '#325575',
                 dark: '#2E4F6C',
-                darker: '#1F3649'
+                darker: '#1F3649',
+                900: '#132330',
+                950: '#0A131B',
+                light: '#5A82A6'
+              },
+              surface: {
+                50: '#F8FAFC',
+                100: '#F1F5F9',
+                200: '#E2E8F0',
+                800: '#1E293B',
+                900: '#0F172A',
+                950: '#020617'
               }
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow': '0 0 35px -5px rgba(62, 105, 144, 0.3)',
+              'glow-lg': '0 0 50px -10px rgba(62, 105, 144, 0.45)',
+              'card': '0 10px 30px -10px rgba(15, 23, 42, 0.08)',
+              'card-hover': '0 20px 40px -15px rgba(15, 23, 42, 0.12)'
             }
           }
         }
@@ -102,9 +241,27 @@
     }
     </script>
     <link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-gray-50 text-gray-800">
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand selection:text-white">
+    <!-- Non-JS Fallback for Search Engine Crawlers & Accessibility -->
+    <noscript>
+      <div style="padding: 2.5rem 1.5rem; background: #3E6990; color: #ffffff; text-align: center; font-family: sans-serif;">
+        <h1 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem;">Gourmetech — Sistema de Gestão e Delivery para Restaurantes e Mercados</h1>
+        <p style="max-width: 720px; margin: 0 auto 1rem auto; font-size: 1rem; line-height: 1.5; color: #E2ECF4;">
+          O Gourmetech é o sistema completo em nuvem para controle de pedidos, KDS de cozinha em tempo real, expedição de entregas com aplicativo nativo para motoboys e controle de estoque por ficha técnica com custo fixo zero em mensalidades.
+        </p>
+        <p style="font-size: 0.9rem; color: #BDD4E6; margin-bottom: 1.5rem;">
+          Para uma experiência completa e navegação interativa, por favor habilite o JavaScript no seu navegador.
+        </p>
+        <p>
+          <a href="/contact" style="display: inline-block; background: #ffffff; color: #3E6990; padding: 0.75rem 1.5rem; border-radius: 9999px; text-decoration: none; font-weight: 700; font-size: 0.95rem;">
+            Solicitar Demonstração e Contato Comercial
+          </a>
+        </p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
