@@ -6,6 +6,7 @@ const TEST_ENVIRONMENT = "https://gourmetech-coreteste-5d758e07e0da.herokuapp.co
 const PROD_ENVIRONMENT = "https://gourmetech-core-46715094ffeb.herokuapp.com/"; 
 
 const getBaseUrl = (): string => {
+    if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
     const hostname = window.location.hostname;
 
     if (hostname.includes("localhost") || hostname.includes("192.168")) {

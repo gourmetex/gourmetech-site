@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -39,6 +39,12 @@ const ScrollToTop = () => {
 
 const AnimatedRoutes = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (location.pathname === '/' && /^#\/(contact|terms|privacy)(?:[?#]|$)/.test(location.hash)) {
+      navigate(location.hash.slice(1), { replace: true });
+    }
+  }, [location.pathname, location.hash, navigate]);
 
   return (
     <AnimatePresence mode="wait">
@@ -47,6 +53,7 @@ const AnimatedRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="*" element={<section className="mx-auto max-w-3xl px-6 py-32"><h1 className="text-3xl font-bold">Página não encontrada</h1><a href="/" className="mt-4 inline-block underline">Voltar ao início</a></section>} />
       </Routes>
     </AnimatePresence>
   );
